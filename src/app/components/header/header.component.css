@@ -1,0 +1,70 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+
+  mat-toolbar{
+    background-color: transparent; 
+    
+  }
+
+ button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding-right: 20px;
+    outline: none;
+  }
+
+  button i{
+
+    color:rgb(219, 153, 31);
+  }
+  .menu-div{
+    /* background-color: yellow; */
+    width: 50%;
+
+  }
+
+  .logo-div{
+    /* background-color: blue; */
+    width: 50%;
+    
+    
+  }
+
+  .logo-div img{
+    padding-left: 30%;
+    height: 50%;
+    width: 50%;
+  }
+  
+  .contact-info{
+    padding-left: 35%;
+  }
+
+  .menu-items button{
+
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  #dropdown{
+    font-weight: bold;
+    color: white;
+    
+  
+  }
+
+
+  .drop-items {
+    background-color:  rgba(219, 153, 31, 0.6);
+    
+  }
+
+  .drop-items button:hover{
+    background-color:  rgba(17, 7, 7, 0.315);
+  }
+ 
+
+ 
