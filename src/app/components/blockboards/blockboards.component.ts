@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
-import { BwrComponent } from './bwr/bwr.component';
+// import { BwrComponent } from './bwr/bwr.component';
 import { BwpComponent } from './bwp/bwp.component';
+import { BwrrComponent } from './bwrr/bwrr.component';
 
 @Component({
   selector: 'app-blockboards',
@@ -23,7 +24,7 @@ export class BlockboardsComponent implements OnInit {
     });
 }
 openDialog1(){
-const dialogRef= this.dialog.open(BwrComponent,{height:'600px',width:'600px'});
+const dialogRef= this.dialog.open(BwrrComponent,{height:'600px',width:'600px'});
     dialogRef.afterClosed().subscribe(result => {
       console.log(result);
     });
