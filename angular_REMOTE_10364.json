@@ -128,8 +128,5 @@
       }
     }
   },
-  "defaultProject": "ProjectPlyWood",
-  "cli": {
-    "analytics": "029641e5-0bdf-4681-bc87-893badecd969"
-  }
+  "defaultProject": "ProjectPlyWood"
 }

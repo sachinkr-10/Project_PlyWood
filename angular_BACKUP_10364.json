@@ -24,11 +24,16 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.css"
+=======
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css",
               "./node_modules/font-awesome/css/font-awesome.min.css",
               "./node_modules/aos/dist/aos.css"
+>>>>>>> vaibhav
             ],
             "scripts": [
               "./node_modules/aos/dist/aos.js"
@@ -128,8 +133,13 @@
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "ProjectPlyWood",
   "cli": {
     "analytics": "029641e5-0bdf-4681-bc87-893badecd969"
   }
 }
+=======
+  "defaultProject": "ProjectPlyWood"
+}
+>>>>>>> vaibhav

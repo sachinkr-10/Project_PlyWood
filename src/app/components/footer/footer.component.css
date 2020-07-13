@@ -1,0 +1,27 @@
+.footer{
+    width:100%;
+    margin-top: 7%;
+    padding:2% 10% 0 10%;
+    background-color: rgba(0, 0, 0, 0.096);
+}
+
+ button {
+
+    color: rgb(219, 153, 31);
+    font-size: 25px;
+     border: none;
+     outline: none;
+}
+
+pre{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.534);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+mat-grid-tile img{
+    
+    height: 50%;
+    width: 40%;
+}

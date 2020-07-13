@@ -1,0 +1,41 @@
+
+<div class="nav-bar" [ngStyle]="{'background-color':commune.switch ? ' rgba(0, 0, 0, 0.44)' : 'transparent' }"> 
+  <mat-toolbar >
+    <div class="logo-div">
+     
+      <a role="button" routerLink="home" (click)="commune.onSwitch(false)"><img src="/assets/images/ply_logo.png"></a>
+      
+    </div>
+    <span class="example-spacer"></span>
+    <div class="menu-div">
+      <div class="row contact-info">
+         <a mat-button role="button"  routerLink="contact" (click)="commune.onSwitch(true)">CONTACT US</a>
+        <button ><i class="fa fa-facebook-square" aria-hidden="true"></i></button>
+        <button > <i class="fa fa-twitter-square" aria-hidden="true"></i></button>
+        <button > <i class="fa fa-instagram" aria-hidden="true"></i></button>
+        <button > <i class="fa fa-linkedin" aria-hidden="true"></i></button>
+      </div>
+      
+      
+        <div class="row menu-items">
+          <div class="col-md-2">
+            <a mat-button role="button" routerLink="#"   >ABOUT US</a>
+          </div>
+          <div class="col-md-2">
+            <a mat-button role="button" routerLink="#"   >Why yugal?</a>
+          </div>
+          <div class="col-md-2">
+            <a mat-button role="button" routerLink="product"  (click)="commune.onSwitch(false)" >PRODUCTS</a>
+          </div>
+          <div class="col-md-2">
+            <a mat-button role="button" routerLink="#"   >FAQ</a>
+          </div>
+       
+         
+         
+      </div>
+    </div>
+    
+    
+  </mat-toolbar>
+</div>
