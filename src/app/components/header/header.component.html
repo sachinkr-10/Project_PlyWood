@@ -1,15 +1,15 @@
 
-<div class="nav-bar"> 
-  <mat-toolbar>
+<div class="nav-bar" [ngStyle]="{'background-color':switch? ' rgba(0, 0, 0, 0.44)' : 'transparent' }"> 
+  <mat-toolbar >
     <div class="logo-div">
      
-      <img src="/assets/images/ply_logo.png">
+      <a role="button" routerLink="home" (click)="onSwitch(false)"><img src="/assets/images/ply_logo.png"></a>
       
     </div>
     <span class="example-spacer"></span>
     <div class="menu-div">
       <div class="row contact-info">
-        <button mat-stroked-button>CONTACT US</button>
+         <a mat-button role="button"  routerLink="contact" (click)="onSwitch(true)">CONTACT US</a>
         <button ><i class="fa fa-facebook-square" aria-hidden="true"></i></button>
         <button > <i class="fa fa-twitter-square" aria-hidden="true"></i></button>
         <button > <i class="fa fa-instagram" aria-hidden="true"></i></button>
@@ -19,23 +19,16 @@
       
         <div class="row menu-items">
           <div class="col-md-2">
-            <div ngbDropdown class="d-inline-block">
-              <button class="btn " id="dropdown" ngbDropdownToggle>ABOUT US</button>
-              <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="drop-items">
-                <button ngbDropdownItem>Action </button>
-                <button ngbDropdownItem>Jackson</button>
-                <button ngbDropdownItem>Something </button>
-              </div>
-            </div>
+            <a mat-button role="button" routerLink="#"   >ABOUT US</a>
           </div>
           <div class="col-md-2">
-            <button mat-stroked-button>Why yugal?</button>
+            <a mat-button role="button" routerLink="#"   >Why yugal?</a>
           </div>
           <div class="col-md-2">
-            <button mat-stroked-button>PRODUCTS</button>
+            <a mat-button role="button" routerLink="product"  (click)="onSwitch(false)" >PRODUCTS</a>
           </div>
           <div class="col-md-2">
-            <button mat-stroked-button>FAQ</button>
+            <a mat-button role="button" routerLink="#"   >FAQ</a>
           </div>
        
          

@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  switch:boolean=false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSwitch(choice:boolean){
+    this.switch=choice;
+    console.log(this.switch);
   }
 
 }
