@@ -14,12 +14,13 @@ import { BwrrComponent } from './components/blockboards/bwrr/bwrr.component';
 
 import { HomeComponent } from './components/home/home.component';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CommuneService } from './service/commune.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -44,7 +45,8 @@ import { CommuneService } from './service/commune.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    NgbModule 
+    NgbModule,
+
   ],
   providers: [CommuneService],
   bootstrap: [AppComponent]
