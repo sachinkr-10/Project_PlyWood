@@ -4,9 +4,9 @@
       </div>
 
 
-      <div class="body" >
+      <div class="routerContainer" [@routeAnimation]="getDepth(myOutlet)">
 
-        <router-outlet ></router-outlet>
+        <router-outlet #myOutlet="outlet" (activate)="onActivate($event)"></router-outlet>
 
       </div>
 
@@ -14,7 +14,7 @@
         <app-footer></app-footer>
       </div>
 
-      <!-- <a  role="button" (click)="scrollToElement(target)"><img src="../assets/images/anchor.webp"></a> -->
+      <a  role="button" (click)="scrollToElement(target)"><img src="../assets/images/anchor.webp"></a>
 
 </div>
 

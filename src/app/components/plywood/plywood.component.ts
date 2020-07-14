@@ -36,7 +36,7 @@ export class PlywoodComponent implements OnInit {
            });
   }
   openDialog1(){
-    const dialogRef= this.dialog.open(BwrComponent,{height:'600px',width:'600px'});
+    const dialogRef= this.dialog.open(BwrComponent,{height:'600px',width:'600px',backdropClass: 'backdropBackground'});
            dialogRef.afterClosed().subscribe(result => {
              console.log(result);
            });

@@ -4,7 +4,7 @@
     <mat-card-title>BWP</mat-card-title>
     <!-- <h5 class="card-title">Card title</h5> -->
     <p class="card-text">
-          {{bwrDetails.details}}
+          {{bwpDetails.details}}
     </p>
     <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
 
@@ -16,35 +16,32 @@
         <tr>
           <th scope="row"  >Highlights:</th>
           <td >
-            <ul *ngFor="let highlights of bwrDetails.highlight">
+            <ul *ngFor="let highlights of bwpDetails.highlight">
               <li>{{highlights}}</li>
             </ul></td>
 
         </tr>
         <tr >
           <th scope="row" >Size:</th>
-          <td>{{bwrDetails.size}}</td>
+          <td>{{bwpDetails.size}}</td>
         </tr>
         <tr >
           <th scope="row" >Thickness:</th>
-          <td>{{bwrDetails.thickness}}</td>
+          <td>{{bwpDetails.thickness}}</td>
         </tr>
         <tr >
           <th scope="row" >Applications:</th>
-          <td>{{bwrDetails.applications}}</td>
+          <td>{{bwpDetails.applications}}</td>
         </tr>
         <tr >
-          <th scope="row" ><button mat-raised-button class="btn btn-success btn-sm mt-2">Contact Us</button></th>
+          <th scope="row" >
+            <button mat-raised-button  mat-dialog-close class="btn btn-success btn-sm mt-2" routerLink="/contact">Contact Us</button></th>
 
         </tr>
       </tbody>
 
     </table>
-<<<<<<< HEAD
-    <!-- <button mat-raised-button class="btn btn-success btn-sm mt-2">Contact Us</button> -->
-=======
-    <button mat-raised-button class="btn btn-success btn-sm mt-2" routerLink="contact">Contact Us</button>
->>>>>>> 3da5161387518f383e7e70f150f6353c8336482d
+    <!-- <button mat-raised-button class="btn btn-success btn-sm mt-2" >Contact Us</button> -->
   </div>
   <!-- <button mat-raised-button class="btn btn-success btn-sm mt-2">Contact Us</button> -->
 

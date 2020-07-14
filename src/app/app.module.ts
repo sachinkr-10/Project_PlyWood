@@ -20,6 +20,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CommuneService } from './service/commune.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -44,6 +45,7 @@ import { CommuneService } from './service/commune.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    NgbModule,
 
   ],
   providers: [CommuneService],
