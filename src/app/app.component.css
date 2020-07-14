@@ -1,0 +1,18 @@
+.main-page .header{
+    position: absolute;
+    z-index: 9;
+    font-size: 30px;
+    width: 100%;
+    
+    
+}
+
+.main-page a img{
+width: 50px;
+height: 50px;
+position: fixed;
+z-index: 3;
+left: 97%;
+top: 94%;
+opacity: 0.8;
+}

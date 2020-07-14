@@ -1,0 +1,61 @@
+.contact-poster{
+    width: 100%;
+    height:600px;
+   
+}
+
+.contact-poster img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.contact-info{
+    width: 100%;
+    height: 50%;
+    padding-top: 40px;
+    background-image: linear-gradient(to top, rgba(253, 27, 27, 0.438),rgba(124, 38, 222, 0.507), rgba(38, 136, 222, 0.308))
+    ,url("../../../assets/images/laptop.jpg");
+  
+  margin-bottom: -100px;
+    
+}
+.contact-info img{
+    width: 170px;
+    height: 50px;
+    margin-bottom: 90px;
+    margin-left: 100px;
+}
+
+.phone{
+    text-align: center;
+    border: 3px solid black;
+    box-shadow: 10px 10px 15px 0px rgba(11, 11, 17, 0.7);
+}
+
+.phone h2{
+    background-color: black;
+    color: white;
+    margin-bottom: 0px;
+}
+.phone div{
+
+    width: 300px;
+    height: 200px;
+    
+}
+ 
+#contact-logo{
+    position: absolute;
+    left:100px;
+    top:40px;
+    z-index: 3;
+    width: 350px;
+    height: 200px;
+}
+
+   
+
+
+
+

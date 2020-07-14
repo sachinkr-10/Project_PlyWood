@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 
 @Component({
@@ -16,4 +15,18 @@ ngOnInit(){
     duration:800
   });
  }
+// }
+// export class AppComponent  implements OnInit {
+
+
+
+//   ngOnInit() {
+//     AOS.init();
+//   }
+
+//   scrollToElement($element): void {
+//     console.log($element);
+//     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+//   }
+
 }
