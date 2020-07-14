@@ -2,3 +2,8 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.backdropBackground {
+  background: rgba(26, 61, 50, 0.2);
+  backdrop-filter: blur(8px);
+}
