@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommuneService } from 'src/app/service/commune.service';
+import { Router } from '@angular/router';
 
 
 
@@ -12,9 +13,12 @@ import { CommuneService } from 'src/app/service/commune.service';
 export class HomeComponent implements OnInit {
 
   images=['/assets/images/first.jpg','/assets/images/second.jpg','/assets/images/third.jpg','/assets/images/fourth.jpg']
-  constructor(public commune:CommuneService) {}
+  constructor(public commune:CommuneService,private router:Router) {}
 
   ngOnInit(): void {
+
+    // console.log(this.router.url);
+    this.commune.onCheck();
   }
 
 }

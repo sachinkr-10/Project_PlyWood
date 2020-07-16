@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -6,12 +7,18 @@ import { Injectable } from '@angular/core';
 export class CommuneService {
 
   switch:boolean=false;
-  constructor() { }
+  constructor(private router:Router) { }
 
-  onSwitch(choice:boolean){
-    this.switch=choice;
-    console.log(this.switch);
+
+  onCheck(){
+  if(this.router.url=="/home" || this.router.url=="/home#product"){
+  this.switch=false;
+  }else{
+    this.switch=true;
   }
+
+  }
+
 }
 
 

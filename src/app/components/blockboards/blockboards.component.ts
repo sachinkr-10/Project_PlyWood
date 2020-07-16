@@ -4,6 +4,8 @@ import { MatDialog } from '@angular/material/dialog';
 // import { BwrComponent } from './bwr/bwr.component';
 import { BwpComponent } from './bwp/bwp.component';
 import { BwrrComponent } from './bwrr/bwrr.component';
+import { Router } from '@angular/router';
+import { CommuneService } from 'src/app/service/commune.service';
 
 @Component({
   selector: 'app-blockboards',
@@ -12,9 +14,10 @@ import { BwrrComponent } from './bwrr/bwrr.component';
 })
 export class BlockboardsComponent implements OnInit {
 
-  constructor(public dialog:MatDialog) { }
+  constructor(public dialog:MatDialog,private commune:CommuneService) { }
 
   ngOnInit(): void {
+    this.commune.onCheck();
   }
 
   openDialog(){
