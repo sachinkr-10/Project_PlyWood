@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 import { trigger, transition, group, query, style, animate } from '@angular/animations';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -40,31 +41,25 @@ import { trigger, transition, group, query, style, animate } from '@angular/anim
 })
 export class AppComponent {
   title = 'ProjectPlyWood';
-
+constructor(){
+ 
+}
+  
 ngOnInit(){
   AOS.init({
     offset:400,
     duration:1000
   });
+
  }
-// }
-// export class AppComponent  implements OnInit {
 
-
-
-//   ngOnInit() {
-//     AOS.init();
-//   }
 
   scrollToElement($element): void {
-    console.log($element);
+   
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
-//for always top while chamging routes
-onActivate(event){
-  window.scroll(0,0);
-}
+
 
 getDepth(outlet) {
   return outlet.activatedRouteData['depth'];

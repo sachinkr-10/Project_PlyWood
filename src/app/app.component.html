@@ -4,9 +4,9 @@
       </div>
 
 
-      <div class="routerContainer" [@routeAnimation]="getDepth(myOutlet)">
+      <div class="routerContainer" >
 
-        <router-outlet #myOutlet="outlet" (activate)="onActivate($event)"></router-outlet>
+        <router-outlet  (activate)="scrollToElement(target)"></router-outlet>
 
       </div>
 
