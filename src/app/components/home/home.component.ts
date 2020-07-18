@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
   constructor(public commune:CommuneService) {}
 
   ngOnInit(): void {
+    this.commune.onCheck();
   }
 
 }

@@ -1,7 +1,6 @@
 .footer{
     width:100%;
-    margin-top: 7%;
-    padding:2% 10% 0 10%;
+    padding:2% 10% 0 15%;
     background-color: rgba(0, 0, 0, 0.096);
 }
 
@@ -20,8 +19,54 @@ pre{
 }
 
 
-mat-grid-tile img{
+.footer img{
     
     height: 50%;
     width: 40%;
+}
+
+.row{
+    width: 113%;
+    
+}
+
+
+@media(max-width:1005px){
+    .row{
+        width: 130%;
+        margin-left: -80px;
+    }
+   }
+
+   @media(max-width:768px){
+
+    .footer img{
+    
+        height: 60%;
+        width: 40%;
+    }
+
+
+    .footer{
+        height: 180px;
+        padding-top: 50px;
+    }
+    
+   }
+
+   @media(max-width:576px){
+
+    .col-lg-4{
+        width: 200px;
+        
+    }
+    .row{
+        padding-left: 50px;
+    }
+    
+    .footer img{
+    
+        height: 70%;
+        width: 70%;
+    }
 }

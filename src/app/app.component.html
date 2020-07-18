@@ -3,8 +3,8 @@
         <app-header></app-header>
       </div>
 
-
-      <div class="routerContainer" [@routeAnimation]="getDepth(myOutlet)">
+      <!-- [@routeAnimation]="getDepth(myOutlet)" -->
+      <div class="routerContainer" >
 
         <router-outlet #myOutlet="outlet" (activate)="onActivate($event)"></router-outlet>
 
@@ -19,3 +19,6 @@
 </div>
 
 
+
+
+ 
