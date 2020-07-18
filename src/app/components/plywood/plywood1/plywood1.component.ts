@@ -23,11 +23,13 @@ export class Plywood1Component implements OnInit {
   Almirahs, Racks, Vertical Load Bearing needs in a furniture, Back Support for Creative structural work that need wide arch angles and curves etc.
 `};
 
-  constructor(private commune:CommuneService) { }
+  constructor(private commune:CommuneService) {
+    this.commune.onCheck();
+  }
 
   ngOnInit(): void {
 
-    this.commune.onCheck();
+
   }
 
 }

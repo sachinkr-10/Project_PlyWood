@@ -4,11 +4,17 @@
       </div>
 
 
-      <div class="routerContainer" >
+      <div class="routerContainer" [@routeAnimation]="getDepth(myOutlet)">
 
-        <router-outlet  (activate)="scrollToElement(target)"></router-outlet>
+        <router-outlet  #myOutlet="outlet" (activate)="scrollToElement(target)"></router-outlet>
 
       </div>
+
+      <!-- <div class="routerContainer" [@routeAnimation]="getDepth(myOutlet)">
+
+        <router-outlet #myOutlet="outlet" (activate)="onActivate($event)"></router-outlet>
+
+      </div> -->
 
       <div class="footer">
         <app-footer></app-footer>

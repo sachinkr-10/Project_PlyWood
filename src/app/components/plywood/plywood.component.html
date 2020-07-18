@@ -1,25 +1,28 @@
 <div class="container">
-
+        <div class="row">
+          <div class="col">
   <div class="card mt-2 mb-3 border-0" >
      <!-- <img src="assets/img/Images/img2.jpg"   class="img-fluid mt-2 mx-auto" alt="Responsive image"> -->
 
     <div class="card-body text-left p-2 m-3"  >
-      <img src="assets/img/Images/img2.jpg" tabindex="1" data-aos="fade-right" width="947" height="442" class="card-img-top" alt="...">
+      <img src="assets/img/Images/img2.jpg" tabindex="1" data-aos="fade-right" width="947" height="442" class="card-img-top img-responsive" alt="...">
 
       <!-- <h4 class="card-title my-2 ">PLYWOOD</h4> -->
-      <mat-card-title   class="my-4">PLYWOOD</mat-card-title>
-      <p  class="card-text text-muted h5 font-weight-light py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eos nam, quibusdam deserunt exercitationem tempora, similique magni illum fugit, doloremque necessitatibus distinctio quod minima laborum eligendi eveniet est temporibus odio.
+      <mat-card-title  class="my-4">PLYWOOD</mat-card-title>
+      <p  class=" custom card-text text-muted h5 font-weight-light py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eos nam, quibusdam deserunt exercitationem tempora, similique magni illum fugit, doloremque necessitatibus distinctio quod minima laborum eligendi eveniet est temporibus odio.
         Lorem ipsum dolor sit amet consectetur, adipisicing elit Odio recusandae hic sapiente quidem dolor sint vitae asperiores culpa nemo adipisci magnam voluptatum, aliquid reiciendis. Assumenda eum corporis eveniet optio soluta.</p>
       <p class="card-text"><small class="text-muted"></small></p>
     </div>
+  </div>
+  </div>
 
     <section >
     <div class="row mx-1 mt-2">
 
-      <div class="col d-flex align-items-stretch mb-4"  >
+      <div class="col-sm-6 d-flex align-items-stretch mb-4"  >
         <mat-card class="example-card" data-aos="fade-right" tabindex="2">
 
-          <img mat-card-image src="assets/img/Images/img3.jpeg" width="459" height="245" alt="Photo of a Shiba Inu">
+          <img mat-card-image src="assets/img/Images/img3.jpeg" width="459" height="245" class="img-responsive" alt="Photo of a Shiba Inu">
           <mat-card-header>
 
             <mat-card-title>BWP</mat-card-title>
@@ -27,7 +30,7 @@
           </mat-card-header>
           <mat-card-content>
             <p class="card-text text-muted h6 font-weight-light"> {{bwpDetails.info}} </p>
-              <table class="table table-sm table-borderless">
+              <table class="table table-hover table-sm table-borderless">
 
                 <tbody>
                   <tr>
@@ -50,17 +53,17 @@
 
           </mat-card-content>
           <mat-card-actions>
-            <button  mat-raised-button color="accent" class=" btn mb-2" (click)="openDialog()">Details</button>
+            <button  mat-raised-button color="accent" class="btn mb-2" (click)="openDialog()">Details</button>
 
             <!-- <button mat-button>SHARE</button> -->
           </mat-card-actions>
         </mat-card>
       </div>
 
-      <div class="col d-flex align-items-stretch mb-4" tabindex="4">
+      <div class="col-sm-6 d-flex align-items-stretch mb-4" tabindex="4">
       <mat-card class="example-card" data-aos="fade-left" >
 
-        <img mat-card-image src="assets/img/Images/img1.jpeg" width="459" height="245" alt="Photo of a Shiba Inu">
+        <img mat-card-image src="assets/img/Images/img1.jpeg" class="img-responsive" width="459" height="245" alt="Photo of a Shiba Inu">
         <mat-card-header>
 
           <mat-card-title>BWR</mat-card-title>

@@ -32,13 +32,13 @@ export class PlywoodComponent implements OnInit {
   openDialog(){
            const dialogRef= this.dialog.open(Plywood1Component,{height:'600px',width:'600px',backdropClass: 'backdropBackground'});
            dialogRef.afterClosed().subscribe(result => {
-             console.log(result);
+                         console.log(result);
            });
   }
   openDialog1(){
     const dialogRef= this.dialog.open(BwrComponent,{height:'600px',width:'600px',backdropClass: 'backdropBackground'});
            dialogRef.afterClosed().subscribe(result => {
-             console.log(result);
+            console.log(result);
            });
 
   }
