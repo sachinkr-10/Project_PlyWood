@@ -1,11 +1,11 @@
 
  <div class="home" >
-  <div class="slider">
+  <div class=" slider d-none d-md-block ">
     <ngb-carousel *ngIf="images" >
 
 
       <ng-template ngbSlide *ngFor="let image of images">
-        <div class="picsum-img-wrapper">
+        <div class=" picsum-img-wrapper" >
           <img [src]="image" alt="Random slide">
         </div>
         <div class="carousel-caption">
@@ -29,15 +29,20 @@
 
     <div class=" row products">
 
-      <div class="col-md-4" data-aos="fade-right" data-aos-duration="1500">
+      <div class="col-md-6 col-sm-4" data-aos="fade-right" data-aos-duration="1500">
         <a routerLink="/plywood" role="button" ><img src="../../../assets/images/first.jpg" >
           <h3>PlyWood</h3></a>
      </div>
 
-     <div class="col-md-4 space" data-aos="fade-left" data-aos-duration="1500">
-      <a routerLink="/blockboard"  role="button"><img src="../../../assets/images/third.jpg">
+     <div class="col-md-6 col-sm-4" data-aos="fade-left" data-aos-duration="1500">
+      <a routerLink="/blockboard"  role="button" ><img src="../../../assets/images/third.jpg">
         <h3>BlockBoard</h3></a>
- </div>
+      </div>
+        <div class="col-md-6 col-sm-4 space" data-aos="fade-up" data-aos-duration="1500"  >
+          <a routerLink="/plywood" role="button" ><img src="../../../assets/images/first.jpg" >
+            <h3>PlyWood</h3></a>
+       </div>
+ 
 
 
 
@@ -45,7 +50,7 @@
 
   </div>
 
-  <div class="caption">
+  <div class=" caption">
 
     <h2>MORE THAN JUST PLYWOOD, WE ARE A FULL-SERVICE MASTER DISTRIBUTOR THAT FREES YOU UP TO CONCENTRATE ON WHAT MATTERS MOST; YOUR BOTTOM-LINE AND YOUR REPUTATION</h2>
   </div>

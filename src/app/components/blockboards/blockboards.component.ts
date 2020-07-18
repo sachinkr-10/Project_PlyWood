@@ -4,7 +4,6 @@ import { MatDialog } from '@angular/material/dialog';
 // import { BwrComponent } from './bwr/bwr.component';
 import { BwpComponent } from './bwp/bwp.component';
 import { BwrrComponent } from './bwrr/bwrr.component';
-import { Router } from '@angular/router';
 import { CommuneService } from 'src/app/service/commune.service';
 
 @Component({

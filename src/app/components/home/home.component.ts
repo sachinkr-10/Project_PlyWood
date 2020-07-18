@@ -16,8 +16,6 @@ export class HomeComponent implements OnInit {
   constructor(public commune:CommuneService,private router:Router) {}
 
   ngOnInit(): void {
-
-    // console.log(this.router.url);
     this.commune.onCheck();
   }
 

@@ -4,9 +4,10 @@
       </div>
 
 
-      <div class="routerContainer" [@routeAnimation]="getDepth(myOutlet)">
 
-        <router-outlet  #myOutlet="outlet" (activate)="scrollToElement(target)"></router-outlet>
+      <div class="routerContainer"  [@routeAnimation]="getDepth(myOutlet)">
+
+        <router-outlet #myOutlet="outlet"  (activate)="scrollToElement(target)"></router-outlet>
 
       </div>
 
@@ -23,5 +24,8 @@
       <a  role="button" (click)="scrollToElement(target)"><img src="../assets/images/anchor.webp"></a>
 
 </div>
+
+
+
 
 

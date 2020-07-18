@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Plywood1Component } from './plywood1/plywood1.component';
 import { BwrComponent } from './bwr/bwr.component';
-import * as AOS from 'aos';
+import { CommuneService } from 'src/app/service/commune.service';
 
 @Component({
   selector: 'app-plywood',
@@ -24,10 +24,10 @@ export class PlywoodComponent implements OnInit {
 
 
 
-  constructor(public dialog:MatDialog) { }
+  constructor(public dialog:MatDialog,private commune:CommuneService) { }
 
   ngOnInit(): void {
-
+    this.commune.onCheck();
   }
   openDialog(){
            const dialogRef= this.dialog.open(Plywood1Component,{height:'600px',width:'600px',backdropClass: 'backdropBackground'});

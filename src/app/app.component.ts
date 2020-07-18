@@ -47,8 +47,10 @@ constructor(){
 
 ngOnInit(){
   AOS.init({
-    offset:400,
+    
+    offset:300,
     duration:1000
+   
   });
 
  }
