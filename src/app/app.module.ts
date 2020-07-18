@@ -21,6 +21,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CommuneService } from './service/commune.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutComponent } from './components/about/about.component';
+import { FlushdoorComponent } from './components/flushdoor/flushdoor.component';
 
 
 
@@ -38,7 +40,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    AboutComponent,
+    FlushdoorComponent
   ],
   imports: [
     BrowserModule,

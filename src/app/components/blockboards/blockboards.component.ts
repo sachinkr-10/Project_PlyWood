@@ -13,25 +13,28 @@ import { CommuneService } from 'src/app/service/commune.service';
 })
 export class BlockboardsComponent implements OnInit {
 
-  constructor(public dialog:MatDialog,private commune:CommuneService) { }
+  bwrDetails;
+  bwpDetails;
+
+  constructor(public dialog: MatDialog, private commune: CommuneService) { }
 
   ngOnInit(): void {
     this.commune.onCheck();
   }
 
-  openDialog(){
-    const dialogRef= this.dialog.open(BwpComponent,{height:'600px',width:'600px'});
+  openDialog() {
+    const dialogRef = this.dialog.open(BwpComponent, { height: '600px', width: '600px' });
     dialogRef.afterClosed().subscribe(result => {
       console.log(result);
     });
-}
-openDialog1(){
-const dialogRef= this.dialog.open(BwrrComponent,{height:'600px',width:'600px'});
+  }
+  openDialog1() {
+    const dialogRef = this.dialog.open(BwrrComponent, { height: '600px', width: '600px' });
     dialogRef.afterClosed().subscribe(result => {
       console.log(result);
     });
 
-}
+  }
 
 
 }
