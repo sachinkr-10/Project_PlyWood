@@ -11,14 +11,13 @@
   }
   mat-toolbar{
     background-color: transparent; 
+    width: 100%;
     
   }
 
  .menu-div button {
     background-color: transparent;
     border: none;
-    padding-right: 20px;
- 
   }
 
   .menu-div a{
@@ -33,14 +32,26 @@
     border: 2px solid rgb(219, 153, 31);
   }
 
-  button i{
 
-    margin-left: 15px;
-    color:rgb(219, 153, 31);
+  .contact-info{
+    padding-left: 30%;
+    
+
   }
+  .contact-info button {
+    color:rgb(219, 153, 31);
+  
+  }
+
+  .contact_space a{
+    margin-left: -30px;
+  }
+ 
+
   .menu-div{
     /* background-color: yellow; */
-    width: 50%;
+    width: 40%;
+    margin-right: 10%;
 
   }
 
@@ -57,32 +68,76 @@
     width: 50%;
   }
   
-  .contact-info{
-    padding-left: 35%;
-  }
+  
 
-  .menu-items button{
+ 
+  .menu-items a{
 
-    font-size: 17px;
+    font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
-  #dropdown{
-    font-weight: bold;
-    color: white;
-    
+
   
-  }
 
+  @media(max-width:992px){
+.hamburger mat-icon{
 
-  .drop-items {
-    background-color:  rgba(219, 153, 31, 0.6);
-    
-  }
+  font-size: 40px;
+  color:rgb(243, 189, 11);
 
-  .drop-items button:hover{
-    background-color:  rgba(17, 7, 7, 0.315);
-  }
+}
+
+.hamburger button{
+ 
+  height: 54px;
+  width: 47px;
+  outline: none;
+  margin-left: 100px;
  
 
- 
+}
+
+ .menu_item {
+
+background-color: rgba(243, 189, 11, 0.568);
+outline: none;
+
+
+ }
+
+ .menu_item:hover{
+
+  background-color:rgba(243, 189, 11, 0.904) ;
+ }
+
+.logo-div img{
+  width: 150px;
+  height: 100px;
+  padding-left: 0px;
+  margin-left: 60px;
+
+}
+
+
+
+ }
+
+ @media(max-width:768px){
+  .hamburger{
+      margin-left: 80px;
+  }
+
+  mat-toolbar{
+    background-color: rgba(0, 0, 0, 0.44);
+    height: 100%;
+    /* margin-top: 0px; */
+    /* padding-top: 20px; */
+    padding-bottom: 25px;
+  }
+
+
+ }
+  
+
+
