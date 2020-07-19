@@ -1,40 +1,59 @@
-<div class="card mb-3">
-  <img src="assets/img/Images/img1.jpeg" width="947" height="442" class="card-img-top" alt="...">
-  <div class="card-body">
+<div class="container">
+  <div class="row">
+
+  <div class="col">
+<div  class="card mb-3"  data-aos="zoom-in" >
+  <img src="assets/img/Images/img1.jpeg"  tabindex="1" width="947" height="442" class="card-img-top img-fluid img-responsive" alt="...">
+</div>
+</div>
+  </div>
+<div class="row">
+  <div class="card-body" tabindex="2">
     <mat-card-title>BWR</mat-card-title>
     <!-- <h5 class="card-title">Card title</h5> -->
     <p class="card-text">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci animi deserunt illum consequuntur odit molestias ipsa, velit repudiandae deleniti alias rem et sint commodi totam nobis laudantium dignissimos iure.
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias nihil quo ipsa doloribus suscipit adipisci laborum eum tenetur quaerat quibusdam. Fugiat eveniet facilis iste quibusdam veniam hic harum. Dolorem, nemo.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, fugiat! Maxime, dolor. Eius similique quod odio cum, iure, sit corporis fugiat illo quas aperiam, tenetur possimus nobis dicta vitae. Cum?
+          {{bwrDetails.details}}
     </p>
     <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+   <div class="table-responsive-sm">
 
-    <table class="table table-bordered">
+    <table class="table table-borderless" >
       <thead>
 
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">Quantity Avail.</th>
-          <td>100</td>
+        <tr class="d-none d-md-table-row">
+          <th scope="row">Highlights:</th>
+          <td >
+            <ul *ngFor="let highlights of bwrDetails.highlight">
+              <li>{{highlights}}</li>
+            </ul></td>
 
         </tr>
         <tr>
-          <th scope="row">Price Per Quintal</th>
-          <td>5000</td>
+          <th scope="row" >Size:</th>
+          <td class="d-table-cell">{{bwrDetails.size}}</td>
         </tr>
-        <tr>
-          <th scope="row">Price Per Unit</th>
-          <td>100</td>
+        <tr >
+          <th scope="row" >Thickness:</th>
+          <td>{{bwrDetails.thickness}}</td>
+        </tr>
+        <tr class="d-none  d-md-table-row">
+          <th scope="row"  >Applications:</th>
+          <td>{{bwrDetails.applications}}</td>
+        </tr>
+        <tr >
+          <th scope="row" >
+            <button mat-raised-button  mat-dialog-close class="btn btn-success btn-sm mt-2" routerLink="/contact">Contact Us</button></th>
 
         </tr>
       </tbody>
+
     </table>
-    <button mat-raised-button class="btn btn-success btn-sm mt-2" routerLink="contact">Contact Us</button>
+  </div>
+    <!-- <button mat-raised-button class="btn btn-success btn-sm mt-2" >Contact Us</button> -->
   </div>
   <!-- <button mat-raised-button class="btn btn-success btn-sm mt-2">Contact Us</button> -->
-
 </div>
-
+</div>
 
