@@ -1,13 +1,13 @@
 
-
-  <div class=" row  nav-bar " [ngStyle]="{'background-color':commune.switch ? ' rgba(0, 0, 0, 0.44)' : 'transparent' }"> 
+<div class="toolbar" [ngStyle]="{'background-color':commune.switch ? ' rgba(0, 0, 0, 0.44)' : 'transparent' }">
+  <div class=" row  nav-bar " > 
     <mat-toolbar >
-      <div class="logo-div  col-lg-6 col-xs-10 ">
+      <div class="logo-div  col-lg-6 col-xs-6 ">
        
         <a role="button" routerLink="home"><img src="/assets/images/ply_logo.png"></a>
         
       </div>
-      <span class="example-spacer"></span>
+      
       <div class="menu-div d-none d-lg-block col-lg-5 ">
         <div class="row contact-info">
           <div class="contact_space d-none d-lg-block  col-lg-4">
@@ -46,7 +46,7 @@
         </div>  
       </div>
       
- <div class="hamburger d-lg-none col-xs-2 ">
+ <div class="hamburger d-lg-none col-xs-6 ">
   <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
   <mat-menu  class="d-lg-none" #menu="matMenu">
     <button class="menu_item"  mat-menu-item>ABOUT</button>
@@ -58,6 +58,8 @@
 </div>
  </mat-toolbar>
 </div>
+</div>
+  
 
 
   

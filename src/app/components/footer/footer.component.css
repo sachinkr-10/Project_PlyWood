@@ -2,6 +2,7 @@
     width:100%;
     padding:2% 10% 0 15%;
     background-color: rgba(0, 0, 0, 0.096);
+   
 }
 
  button {
@@ -33,17 +34,17 @@ pre{
 
 @media(max-width:1005px){
     .row{
-        width: 130%;
-        margin-left: -80px;
+        width: 100%;
+        
     }
    }
 
-   @media(max-width:768px){
+   @media(max-width:767px){
 
     .footer img{
     
-        height: 60%;
-        width: 40%;
+        height: 90%;
+        width: 70%;
     }
 
 
@@ -54,19 +55,25 @@ pre{
     
    }
 
-   @media(max-width:576px){
+  
+
+@media(max-width:576px){
 
     .col-lg-4{
-        width: 200px;
-        
-    }
-    .row{
-        padding-left: 50px;
-    }
+       
+        width: 50%;
     
+       
+    }
+   
     .footer img{
     
-        height: 70%;
-        width: 70%;
+        height: 80%;
+        width: 90%;
+    }
+
+    h1{
+      font-size: 20px;  
+      margin-bottom: -15px;
     }
 }
