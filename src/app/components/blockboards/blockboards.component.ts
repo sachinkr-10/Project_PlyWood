@@ -12,7 +12,6 @@ import { CommuneService } from 'src/app/service/commune.service';
   styleUrls: ['./blockboards.component.css']
 })
 export class BlockboardsComponent implements OnInit {
-
   public bwrDetails:{
     info:String,size:String,thickness:String,availability:String
   }={info:`Yugal Marine grade plywood is a product designed for high-value creative needs and premium class
@@ -27,21 +26,24 @@ export class BlockboardsComponent implements OnInit {
 
 
 
+
+
+
+
   constructor(public dialog:MatDialog) { }
 
   ngOnInit(): void {
-
   }
   openDialog(){
            const dialogRef= this.dialog.open(BwpComponent,{height:'600px',width:'600px',backdropClass: 'backdropBackground'});
            dialogRef.afterClosed().subscribe(result => {
-                         console.log(result);
+             console.log(result);
            });
   }
   openDialog1(){
     const dialogRef= this.dialog.open(BwrrComponent,{height:'600px',width:'600px',backdropClass: 'backdropBackground'});
            dialogRef.afterClosed().subscribe(result => {
-            console.log(result);
+             console.log(result);
            });
 
   }
