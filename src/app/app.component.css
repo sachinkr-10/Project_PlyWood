@@ -2,7 +2,7 @@
     position: absolute;
     z-index: 9;
     font-size: 30px;
-    width: 99%;
+    width: 100%;
     
     
 }
@@ -16,3 +16,5 @@ left: 95%;
 top: 94%;
 opacity: 0.8;
 }
+
+

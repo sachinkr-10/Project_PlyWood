@@ -1,4 +1,6 @@
 
+
+
 .picsum-img-wrapper{
     background-color: rgb(0, 0, 0);
 }
@@ -11,9 +13,12 @@
 
 }
 
+<<<<<<< HEAD
 /* .slider{
     position: relative;
 }  */
+=======
+>>>>>>> eb871b6850b4868eac55f4e141a9f95d99f03d98
 
 h1{
     font-size: 50px;
@@ -85,7 +90,12 @@ h3{
     width: 80%;
     height: 600px;
     margin-left: 50px;
+<<<<<<< HEAD
 
+=======
+    
+   
+>>>>>>> eb871b6850b4868eac55f4e141a9f95d99f03d98
 }
 
 
@@ -117,13 +127,19 @@ h3{
 
     background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgba(2, 1, 1, 0.062));
     width: 70%;
-    margin-left:15%;
     text-align: center;
     height: 100px;
+<<<<<<< HEAD
     padding: 20px 10px 0px 40px;
 
 
 
+=======
+    margin: 2% 1% 0 15%;
+    
+   
+    
+>>>>>>> eb871b6850b4868eac55f4e141a9f95d99f03d98
 }
 
 .caption h2{
@@ -183,7 +199,15 @@ h3{
 
 
 @media(max-width:992px){
+<<<<<<< HEAD
 
+=======
+    
+
+    .home{
+       width: 110%;
+    }
+>>>>>>> eb871b6850b4868eac55f4e141a9f95d99f03d98
     .picsum-img-wrapper img{
         width: 100%;
         height: 400px;
@@ -212,9 +236,7 @@ h3{
         font-size: 20px;
 
     }
-    .caption{
-        margin-bottom:100px;
-    }
+ 
      }
 
 
