@@ -1,4 +1,6 @@
 
+
+
 .picsum-img-wrapper{
     background-color: rgb(0, 0, 0);
 }
@@ -7,19 +9,16 @@
     width: 100%;
     height: 700px;
    opacity: 0.6;
-  
- 
+
+
 }
 
-/* .slider{ 
-    position: relative;
-}  */
 
 h1{
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgba(255, 0, 0, 0.897);
-    
+
 }
 
 h3{
@@ -29,7 +28,7 @@ h3{
     background-color: rgba(255, 255, 255,0.1);
     margin: 0 24% 0 24%;
 
-    
+
 }
 
 .carousel-caption{
@@ -38,25 +37,25 @@ h3{
    padding-top: 27%;
    position: absolute;
    z-index: 4;
-   
-   
+
+
 }
 
 .summary{
 
     padding-left:15%;
     width: 100%;
-    
+
 }
 
 .content{
 
     width: 80%;
     padding-top: 40px;
-    
-   
-    
-    
+
+
+
+
 }
 
 .content img{
@@ -76,7 +75,7 @@ h3{
 .products img{
    width: 80%;
    height:200px;
-   
+
 }
 
 
@@ -85,7 +84,8 @@ h3{
     width: 80%;
     height: 600px;
     margin-left: 50px;
-   
+
+
 }
 
 
@@ -96,15 +96,15 @@ h3{
 
 .products h3{
     padding:5%  0 0 0;
-    
+
 }
 
 .space{
-    
+
     padding-top: 40px;
     margin-left: 25%;
-    
-  
+
+
 }
 
 
@@ -117,13 +117,12 @@ h3{
 
     background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgba(2, 1, 1, 0.062));
     width: 70%;
-    margin-left:15%;
     text-align: center;
     height: 100px;
-    padding: 20px 10px 0px 40px;
-    
-   
-    
+    margin: 2% 1% 0 15%;
+
+
+
 }
 
 .caption h2{
@@ -133,7 +132,7 @@ h3{
 }
 
 .member div{
-    
+
     width: 73%;
     margin-left:15%;
     margin-top: 4%;
@@ -141,11 +140,11 @@ h3{
 .member p{
     font-size: 17px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+
 }
 
 .member span {
-    
+
     font-weight: bold;
     color: rgba(255, 0, 0, 0.863);
 }
@@ -160,8 +159,8 @@ h3{
     border-right: none;
     padding-top: 40px;
     padding-bottom: 40px;
-    
-   
+
+
 }
 
 .belief p{
@@ -183,26 +182,30 @@ h3{
 
 
 @media(max-width:992px){
-    
+
+
+    .home{
+       width: 110%;
+    }
     .picsum-img-wrapper img{
         width: 100%;
         height: 400px;
-       
+
     }
 
     .carousel-caption{
         box-shadow:  3px 3px 7px 8px rgba(0, 0, 0,0.9);
      height: 100px;
      width: 650px;
-    
-       
+
+
     }
 
     .carousel-caption h1{
         font-size: 30px;
         margin-top: -60px;
     }
-    
+
     .carousel-caption h3{
         font-size: 10px;
         margin: 0 24% 0 24%;
@@ -210,11 +213,9 @@ h3{
 
     .products h3{
         font-size: 20px;
-        
+
     }
-    .caption{
-        margin-bottom:100px;
-    }
+
      }
 
 
@@ -223,15 +224,15 @@ h3{
             box-shadow:  3px 3px 7px 8px rgba(0, 0, 0,0.9);
          height: 100px;
          width: 550px;
-           
+
         }
          }
-    
+
      @media(max-width:768px){
-       
+
         .summary {
             padding-top: 100px;
-            
+
         }
 
         .summary .content p{
@@ -242,28 +243,28 @@ h3{
             width: 70px;
         }
 
-        
+
 
         [data-aos^=fade][data-aos^=fade]{
             opacity: 1;
             transform:none;
         }
 
-       
+
 
         .products {
             width: 80%;
             height: 200px;
             margin-left: 0;
-            
-           
+
+
         }
 
         .space{
-    
+
             padding-top: 0px;
             margin-left: 0;
-            
+
         }
 
         .products img{
@@ -279,18 +280,18 @@ h3{
 
 
      @media(max-width:576px){
-       
+
 
         .products {
             width: 80%;
             height: 700px;
             margin-left: 0;
-            
+
         }
 
         .caption{
             margin-bottom:150px;
-            
+
         }
 
         .caption h2{
@@ -299,11 +300,11 @@ h3{
 
         .member p{
             font-size: 14px;
-            
+
         }
 
         .belief p{
             font-size: 17px;
-           
+
         }
      }
