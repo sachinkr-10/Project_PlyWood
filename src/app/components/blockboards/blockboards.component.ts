@@ -26,10 +26,13 @@ export class BlockboardsComponent implements OnInit {
 
 
 
-  constructor(public dialog:MatDialog,private commune:CommuneService) { }
+
+
+
+
+  constructor(public dialog:MatDialog) { }
 
   ngOnInit(): void {
-    this.commune.onCheck();
   }
   openDialog(){
            const dialogRef= this.dialog.open(BwpComponent,{height:'600px',width:'600px',backdropClass: 'backdropBackground'});
