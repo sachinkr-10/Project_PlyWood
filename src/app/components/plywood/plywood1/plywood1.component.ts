@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommuneService } from 'src/app/service/commune.service';
 
 @Component({
   selector: 'app-plywood1',
@@ -22,9 +23,13 @@ export class Plywood1Component implements OnInit {
   Almirahs, Racks, Vertical Load Bearing needs in a furniture, Back Support for Creative structural work that need wide arch angles and curves etc.
 `};
 
-  constructor() { }
+  constructor(private commune:CommuneService) {
+    this.commune.onCheck();
+  }
 
   ngOnInit(): void {
+
+
   }
 
 }

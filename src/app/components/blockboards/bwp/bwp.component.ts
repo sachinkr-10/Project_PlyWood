@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommuneService } from 'src/app/service/commune.service';
 
 @Component({
   selector: 'app-bwp',
@@ -6,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bwp.component.css']
 })
 export class BwpComponent implements OnInit {
-
   public bwpDetails:{
     details:String,highlight:String[],size:String,thickness:String,applications:String
   }={details:`YUGAL BWP Blockboard is made with selected ECO-FRIENDLY timber. The wooden planks are treated with insecticide and funficide
@@ -22,9 +22,13 @@ export class BwpComponent implements OnInit {
   Almirahs, Racks, Vertical Load Bearing needs in a furniture, Back Support for Creative structural work that need wide arch angles and curves etc.
 `};
 
-  constructor() { }
+  constructor(private commune:CommuneService) {
+    this.commune.onCheck();
+  }
 
   ngOnInit(): void {
+
+
   }
 
 }

@@ -1,5 +1,10 @@
 .container{
-   
-    padding-top: 160px;
-    
+
+  padding-top: 160px;
+
+}
+@media (max-width: 544px) {
+.custom{
+  font-size: small;
+} /*1rem = 16px*/
 }

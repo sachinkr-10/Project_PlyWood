@@ -17,8 +17,7 @@ const routes: Routes = [
   {path:'home' ,component:HomeComponent,data:{depth:1}},
   {path:'plywood',component:PlywoodComponent,data:{depth:2}},
   {path:'blockboard',component:BlockboardsComponent,data:{depth:3}},
-
-  {path:'contact',component:ContactComponent,data:{depth:4}},
+   {path:'contact',component:ContactComponent,data:{depth:4}},
   {path:'product',redirectTo:'/home#product'}
 
 ];
